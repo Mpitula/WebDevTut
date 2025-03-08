@@ -1,0 +1,32 @@
+body {
+  font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  background-color: grey;
+  border-radius: 3px;
+  padding: 10px;
+  margin-left: 10px;
+}
+li:first-child {
+  margin: 0px;
+}
+.feature-box {
+  display: flex;
+}
+.feature-box div {
+  width: 100%;
+  margin: 1px;
+}
+section.feature-box.sales div {
+  background-color: grey;
+}
+section.feature-box.classout div {
+  background-color: red;
+}

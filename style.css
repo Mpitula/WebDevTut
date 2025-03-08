@@ -1,0 +1,72 @@
+body {
+  background-color: white;
+  color: white;
+  font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+/*header*/
+header {
+  padding: 20px;
+  height: 400px;
+  background-image: url(images/hero.jpg);
+  background-size: 100%;
+  background-position: center;
+  text-align: center;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+header .logo a {
+  background-image: url("images/logo.png");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  top: -30px; /*Moving the logo from the top used with position*/
+  height: 190px;
+  text-indent: -99999999px; /*for screen readers*/
+  width: 300px;
+}
+.features {
+  background-color: white;
+  color: grey;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.features figure {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.features figure img {
+  width: 400px;
+  border-radius: 50%;
+  box-shadow: grey 0 0 10px;
+  border: solid white;
+}
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  margin: 20px;
+}
+footer {
+  background-color: black;
+  color: grey;
+  font-size: 10px;
+  padding: 20px 20px;
+  text-align: center;
+}
