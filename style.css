@@ -6,6 +6,7 @@ body {
   padding: 0px;
 }
 /*header*/
+
 header {
   padding: 20px;
   height: 400px;
@@ -20,6 +21,7 @@ header a {
   text-decoration: none;
   text-transform: uppercase;
   margin-top: 40px;
+  font-size: 15px;
 }
 
 header .logo a {
@@ -33,12 +35,17 @@ header .logo a {
   text-indent: -99999999px; /*for screen readers*/
   width: 300px;
 }
+
+header .mobile {
+  display: none;
+}
 .features {
   background-color: white;
   color: grey;
   padding: 20px;
   display: flex;
   flex-direction: row;
+  flex: wrap;
 }
 
 .features figure {
@@ -63,6 +70,35 @@ li {
   display: inline-block;
   margin: 20px;
 }
+
+/*Responsiveness*/
+@media screen and (max-width: 738px) {
+  header {
+    height: 250px;
+    background-position: 0 -30px;
+  }
+  header .mobile {
+    display: block;
+  }
+  header .desktop {
+    display: none;
+  }
+  header .logo a {
+    background-size: 200px;
+    height: 100px;
+    width: 200px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 200px;
+    background-position: 0 -0px;
+    background-image: url(images/hero1.jpg);
+  }
+}
+
 footer {
   background-color: black;
   color: grey;
